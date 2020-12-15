@@ -1,21 +1,40 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.container{
+.container-inicio{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
 }
-
+.container-conocenos{
+    width: 100%;
+    max-width: 800px;
+}
+.conocenos-text{
+    font-size: 13px !important;
+}
+.icono{
+    max-width: 150px;
+    height: auto;
+}
+.blanco{
+    color: #ffffff;
+}
+.icono-small{
+    max-width:25px;
+    height: auto;
+    filter: invert(1);
+}
 .bg-color-navbar{
     background-color: #000000;
 }
 
 .background {
-    height: 100vh;
+    height: 60vh;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
 }
+
 #background-inicio{
     background: url(../img/arquitecto.jpg);
 }
@@ -27,64 +46,115 @@ body{
 .card{
     background-color: #eff5f7;
 }
-.card-title{
+.color-vertice{
     color: #026B6E;
-    font-weight: bold;
 }
-.btn-primary{
+.color-azul-vertice{
+    color: #05649E;
+}
+
+.background-color-vertice{
     background-color: #026B6E;
 }
+
+.card-title{
+    font-weight: bold;
+}
+
 .btn-primary:hover{
     background-color: #045e61;
 }
 
-#title{
-    margin-left: 4%;
-    position: absolute;
-    top: 45%;
-}
-#main-title{
+.main-title{
     text-align: center;
     font-weight: 600;
     text-shadow: -2px 0 #37393a, 0 2px #37393a, 2px 0 #37393a, 0 2px #37393a;
-    letter-spacing: 23px;
+    letter-spacing: 22px;
+    text-indent: 22px;
     color: #ffffff;
 }
-#main-subtitle{
+.main-subtitle{
     text-align: center;
-    top: 60%;
     color: #fff;
     text-shadow: -2px 0 #37393a, 0 2px #37393a, 2px 0 #37393a, 0 -2px #37393a;
-    letter-spacing: 3px;
-    
+    letter-spacing: 3px;  
 }
+
+#inicio-contents{
+    margin-left: 4%;
+    position: absolute;
+    top: 22.5%;
+}
+
+#conocenos-title{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 32px;
+    letter-spacing: 15px;
+}
+#conocenos-subtitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    font-size: 19px;
+    color: #000000;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
 .card-text{
     font-size: 19px;
 }
 
-h1 {font-size:25px;}    
+#inicio-title {font-size:25px;}
 
 /* Extra small devices (Galaxy fold, 281px and up) */
 @media (min-width: 281px) {  
-    h1 {font-size:40px;}
+    #inicio-title {font-size:40px;}
 }
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-    h1 {font-size:60px;}
+    #inicio-title {font-size:60px;}
+    #conocenos-title{font-size: 40px;}
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* @media (max-width: 768px) {  
-    .background{
-        max-width: 100%;
-        flex-basis: auto;
-    }
-} */
+@media (min-width: 768px) {
+    #inicio-subtitle{font-size: 20px;}
+    #conocenos-title{font-size: 65px;}
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    h1 {font-size:90px;}
+    #inicio-title {font-size:90px;}
+    #conocenos-subtitle{font-size: 30px;}
+    .background{height: 100vh;}
+    #inicio-contents{
+        margin-left: 4%;
+        position: absolute;
+        top: 45%;
+    }
+    #conocenos-title{
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 90px;
+        letter-spacing: 22px;
+    }
+    #conocenos-subtitle{
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 658px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)
