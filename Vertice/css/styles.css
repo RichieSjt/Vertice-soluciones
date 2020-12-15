@@ -1,0 +1,96 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+}
+
+.bg-color-navbar{
+    background-color: #000000;
+}
+
+.background {
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+#background-inicio{
+    background: url(../img/arquitecto.jpg);
+}
+#background-conocenos{
+    background: url(../img/oficina.jpg);
+    filter: blur(5px);
+}
+
+.card{
+    background-color: #eff5f7;
+}
+.card-title{
+    color: #026B6E;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #026B6E;
+}
+.btn-primary:hover{
+    background-color: #045e61;
+}
+
+#title{
+    margin-left: 4%;
+    position: absolute;
+    top: 45%;
+}
+#main-title{
+    text-align: center;
+    font-weight: 600;
+    text-shadow: -2px 0 #37393a, 0 2px #37393a, 2px 0 #37393a, 0 2px #37393a;
+    letter-spacing: 23px;
+    color: #ffffff;
+}
+#main-subtitle{
+    text-align: center;
+    top: 60%;
+    color: #fff;
+    text-shadow: -2px 0 #37393a, 0 2px #37393a, 2px 0 #37393a, 0 -2px #37393a;
+    letter-spacing: 3px;
+    
+}
+.card-text{
+    font-size: 19px;
+}
+
+h1 {font-size:25px;}    
+
+/* Extra small devices (Galaxy fold, 281px and up) */
+@media (min-width: 281px) {  
+    h1 {font-size:40px;}
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    h1 {font-size:60px;}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (max-width: 768px) {  
+    .background{
+        max-width: 100%;
+        flex-basis: auto;
+    }
+} */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    h1 {font-size:90px;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+    h1 {font-size:90px;}    
+} */
+
+
+   
