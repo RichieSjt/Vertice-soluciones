@@ -77,6 +77,10 @@ body {
     background: url(../img/oficina.jpg);
     filter: blur(5px);
 }
+#background-servicios {
+    background: url(../img/soldar.jpg);
+    filter: blur(5px);
+}
 
 .card {
     background-color: #eff5f7;
@@ -92,6 +96,9 @@ body {
 
 .background-color-vertice {
     background-color: #026B6E;
+}
+.background-color-vertice-claro {
+    background-color: #357174a4;
 }
 
 .card-title {
@@ -123,6 +130,9 @@ body {
     position: absolute;
     top: 25%;
 }
+#inicio-title {
+    font-size: 25px;
+}
 
 #conocenos-title {
     position: absolute;
@@ -140,19 +150,34 @@ body {
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
     font-size: 15px;
-    color: #000000;
+    color: #ffffff;
+    text-shadow: -1.5px 0 #37393a, 0 1.5px #37393a, 1.5px 0 #37393a, 0 -1.5px #37393a;
+
     text-align: center;
     font-weight: bolder;
     letter-spacing: 3px;
+}
+
+#servicios-contents {
+    position: absolute;
+    top: calc(60vh - 25%);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.servicios-title{
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.iconos-servicios{
+    max-width: 125px;
+    height: auto;
 }
 
 .card-text {
     font-size: 19px;
 }
 
-#inicio-title {
-    font-size: 25px;
-}
+
 
 /* Extra small devices (Galaxy fold, 281px and up) */
 @media (min-width: 281px) {
@@ -166,9 +191,11 @@ body {
     #inicio-title {
         font-size: 60px;
     }
-
     #conocenos-title {
         font-size: 40px;
+    }
+    .servicios-title {
+        font-size: 35px;
     }
 }
 
@@ -183,6 +210,9 @@ body {
     }
     #conocenos-subtitle {
         font-size: 25px;
+    }
+    .servicios-title {
+        font-size: 65px;
     }
 }
 
@@ -218,6 +248,17 @@ body {
         transform: translateX(-50%) translateY(-50%);
         width: 658px;
         font-size: 30px;
+    }
+    
+    #servicios-contents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .servicios-title {
+        font-size: 90px;
     }
 }
 
