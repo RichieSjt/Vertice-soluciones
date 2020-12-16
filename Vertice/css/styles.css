@@ -3,6 +3,10 @@ body {
     padding-top: 64px;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 /* Changing the default bootstrap navbar height */
 .navbar {
     min-height: 64px;
@@ -40,10 +44,6 @@ body {
     max-width: 1200px;
 }
 
-.conocenos-text {
-    font-size: 13px !important;
-}
-
 .icono {
     max-width: 150px;
     height: auto;
@@ -79,6 +79,14 @@ body {
 }
 #background-servicios {
     background: url(../img/soldar.jpg);
+    filter: blur(5px);
+}
+#background-proyectos {
+    background: url(../img/arquitectos-3.jpg);
+    filter: blur(5px);
+}
+#background-contactanos {
+    background: url(../img/arquitectos-2.jpg);
     filter: blur(5px);
 }
 
@@ -120,45 +128,49 @@ body {
 
 .main-subtitle {
     text-align: center;
-    color: #fff;
     text-shadow: -2px 0 #37393a, 0 2px #37393a, 2px 0 #37393a, 0 -2px #37393a;
     letter-spacing: 3px;
+    text-indent: 3px;
+    color: #ffffff;
 }
 
 #inicio-contents {
     margin-left: 4%;
     position: absolute;
-    top: 25%;
+    top: 30%;
 }
 #inicio-title {
+    font-size: 35px;
+    letter-spacing: 12px;
+}
+#inicio-subtitle {
     font-size: 25px;
 }
 
 #conocenos-title {
     position: absolute;
-    top: calc(60vh - 42%);
+    top: calc(60vh - 40%);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 32px;
-    letter-spacing: 15px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
 #conocenos-subtitle {
     position: absolute;
-    top: calc(60vh - 22%);
+    top: calc(60vh - 20%);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
     color: #ffffff;
     text-shadow: -1.5px 0 #37393a, 0 1.5px #37393a, 1.5px 0 #37393a, 0 -1.5px #37393a;
-
     text-align: center;
-    font-weight: bolder;
+    font-weight: 600;
     letter-spacing: 3px;
 }
 
-#servicios-contents {
+.absolute-center {
     position: absolute;
     top: calc(60vh - 25%);
     left: 50%;
@@ -166,10 +178,15 @@ body {
 }
 .servicios-title{
     font-size: 30px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 }
+#proyectos-title {
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
 .iconos-servicios{
-    max-width: 125px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -177,34 +194,62 @@ body {
     font-size: 19px;
 }
 
-
-
-/* Extra small devices (Galaxy fold, 281px and up) */
-@media (min-width: 281px) {
-    #inicio-title {
-        font-size: 40px;
-    }
+#contactanos-title {
+    position: absolute;
+    top: calc(60vh - 35%);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 22px;
+    letter-spacing: 8px;
 }
+#contactanos-subtitle {
+    position: absolute;
+    top: calc(60vh - 18%);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    font-size: 13px;
+    color: #ffffff;
+    text-shadow: -1.5px 0 #37393a, 0 1.5px #37393a, 1.5px 0 #37393a, 0 -1.5px #37393a;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
     #inicio-title {
         font-size: 60px;
+        letter-spacing: 15px;
+    }
+    #inicio-subtitle {
+        font-size: 32px;
     }
     #conocenos-title {
         font-size: 40px;
+        letter-spacing: 15px;
     }
     .servicios-title {
         font-size: 35px;
+        letter-spacing: 15px;
+    }
+    #proyectos-title {
+        font-size: 32px;
+        letter-spacing: 15px;
+    }
+    #contactanos-title{
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+    #contactanos-title {
+        font-size: 40px;
+        letter-spacing: 15px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    #inicio-subtitle {
-        font-size: 20px;
-    }
-
     #conocenos-title {
         font-size: 65px;
     }
@@ -214,6 +259,15 @@ body {
     .servicios-title {
         font-size: 65px;
     }
+    #proyectos-title {
+        font-size: 62px;
+    }
+    #contactanos-title{
+        font-size: 60px;
+    }
+    #contactanos-subtitle {
+        font-size: 25px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -221,44 +275,50 @@ body {
     #inicio-title {
         font-size: 90px;
     }
-
     .background {
         height: calc(100vh - 64px);
     }
 
     #inicio-contents {
-        margin-left: 4%;
-        position: absolute;
         top: 45%;
     }
 
     #conocenos-title {
-        position: absolute;
         top: 27%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
         font-size: 90px;
-        letter-spacing: 22px;
     }
 
     #conocenos-subtitle {
-        position: absolute;
         top: 74%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
         width: 658px;
         font-size: 30px;
     }
     
-    #servicios-contents {
-        position: absolute;
+    .absolute-center {
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
     }
-
     .servicios-title {
         font-size: 90px;
+    }
+    #proyectos-title {
+        font-size: 90px;
+    }
+    #contactanos-title{
+        font-size: 90px;
+    }
+    #contactanos-title {
+        top: 35%;
+        left: 50%;
+        font-size: 90px;
+    }
+    #contactanos-subtitle {
+        font-size: 30px;
+        top: 65%;
+        left: 50%;
+        width: 900px;
     }
 }
 
