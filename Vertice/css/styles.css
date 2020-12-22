@@ -290,6 +290,9 @@ iframe {
     font-weight: 600;
     letter-spacing: 3px;
 }
+.opacidad:hover img {
+    opacity: 0.8;
+}
 
 
 /* Small devices (landscape phones, 544px and up) */
