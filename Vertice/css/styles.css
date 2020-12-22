@@ -7,6 +7,12 @@ iframe {
     max-width: 100%;
 }
 
+/**************/
+/*            */
+/*   Navbar   */
+/*            */
+/**************/
+
 /* Changing the default bootstrap navbar height */
 .navbar {
     min-height: 64px;
@@ -33,6 +39,38 @@ iframe {
     }
 }
 /* Changing the default bootstrap navbar height */
+
+/**********************/
+/*                    */
+/*   Modal carousel   */
+/*                    */
+/**********************/
+
+.modal-content {
+    background: none;
+    border: none;
+}
+  
+.modal-header {
+    border:none;
+}
+.close {
+    background: none;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover{
+    color: #f1f1f1;
+}
+
+
+/***************/
+/*             */
+/*   Vertice   */
+/*             */
+/***************/
 
 #logo-vertice{
     width: 80px;
@@ -107,9 +145,13 @@ iframe {
 .card-title {
     font-weight: bold;
 }
-
+.btn-primary {
+    border-color: #357174a4;
+}
 .btn-primary:hover {
     background-color: #045e61;
+    border-color: #357174a4;
+
 }
 
 .main-title {
