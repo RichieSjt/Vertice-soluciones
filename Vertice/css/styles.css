@@ -71,6 +71,30 @@ iframe {
 /*   Vertice   */
 /*             */
 /***************/
+.whatsapp-icon-container{
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.whatsapp-icon{
+    width: 35px;
+    height: 35px;
+}
+.whatsapp-icon-mobile{
+    width: 50px;
+    height: 50px;
+}
 
 #logo-vertice{
     width: 80px;
@@ -125,6 +149,20 @@ iframe {
 
 .card {
     background-color: #eff5f7;
+}
+.card-conoce-container{
+    padding: 0;
+}
+.card-conoce{
+    max-width: 100%;
+    padding: 0;
+}
+.card-conoce-row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.no-border-radius{
+    border-radius: 0;
 }
 
 .color-vertice {
@@ -360,6 +398,19 @@ iframe {
     .container {
         width: 100%;
         max-width: 1200px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .card-conoce-container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .card-conoce-row{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .no-border-radius{
+        border-radius: .25rem;
     }
 }
 
