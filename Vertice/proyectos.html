@@ -72,53 +72,258 @@
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Departamento con Roof Garden</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/baño-sencillo.jpg" class="img-fluid" alt="diseño de baño">
+                    
+                    <!-- Imagenes remodelación departamento estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/baño-sencillo.jpg" class="img-fluid carousel-trigger" alt="diseño de baño" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalDepartamento">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/terraza-1.jpg" class="img-fluid" alt="diseño de terraza">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/terraza-1.jpg" class="img-fluid carousel-trigger" alt="diseño de terraza" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalDepartamento">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación departamento estáticas -->
+
+                    <!-- Carousel remodelación departamento -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalDepartamento">
+                        <div id="carouselDepartamento" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/baño-sencillo.jpg" class="d-block w-100" alt="diseño de baño">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/terraza-1.jpg" class="d-block w-100" alt="diseño de terraza">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación departamento -->
+
                     <p class="font-weight-bold">Dirección: Gabriel Mancera #1013 Colonia del Valle.</p>
                     <p>Trabajos Realizados: Pisos, roof garden, asador, techumbre con deck y cristal, baños, vestidor, muro decorativo, cocina integral.</p>
+                    
                 </div>
             </div>
             <!-- Card remodelación departamento-->
-            <!-- Card remodelación residencia-->
+
+            <!-- Modal-carousel Departamento -->
+            <div class="modal fade" id="modalDepartamento" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalDepartamento">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Departamento -->
+                            <div id="carouselModalDepartamento" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/baño-sencillo.jpg" alt="diseño de baño">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/terraza-1.jpg" alt="diseño de terraza">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalDepartamento" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalDepartamento" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Departamento -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Departamento -->
+
+            <!-- Card remodelación Residencia-->
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Residencia</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/tina.jpg" class="img-fluid" alt="diseño de tina">
+                    
+                    <!-- Imagenes remodelación Residencia estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/tina.jpg" class="img-fluid carousel-trigger" alt="diseño de tina" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalResidencia">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/cocina.jpg" class="img-fluid" alt="diseño de cocina">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/cocina.jpg" class="img-fluid carousel-trigger" alt="diseño de cocina" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalResidencia">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación Residencia estáticas -->
+
+                    <!-- Carousel remodelación Residencia -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalResidencia">
+                        <div id="carouselResidencia" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/tina.jpg" class="d-block w-100" alt="diseño de tina">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/cocina.jpg" class="d-block w-100" alt="diseño de cocina">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación Residencia -->
+
                     <p class="font-weight-bold">Dirección: Telchac #43 Col. Jardines del Ajusco.</p>
                     <p>Trabajos Realizados: Instalaciones hidráulica, eléctrica y sanitaria, baños, recámaras, pisos, aluminio, cocina integral.</p>
                 </div>
             </div>
-            <!-- Card remodelación residencia-->
-            <!-- Card remodelación edificio-->
+            <!-- Card remodelación Residencia-->
+
+            <!-- Modal-carousel Residencia -->
+            <div class="modal fade" id="modalResidencia" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalResidencia">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Residencia -->
+                            <div id="carouselModalResidencia" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/tina.jpg" alt="diseño de tina">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/cocina.jpg" alt="diseño de cocina">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalResidencia" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalResidencia" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Residencia -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Residencia -->    
+
+            <!-- Card remodelación Edificio Juarez-->
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Edificio</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/edificio-juarez.jpg" class="img-fluid" alt="remodelación de edificio">
+                    
+                    <!-- Imagenes remodelación Edificio Juarez estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/edificio-juarez.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalEdificioJuarez">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/edificio-juarez-1.jpg" class="img-fluid" alt="remodelación de edificio">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/edificio-juarez-1.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalEdificioJuarez">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación Edificio Juarez estáticas -->
+
+                    <!-- Carousel remodelación Edificio Juarez -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalEdificioJuarez">
+                        <div id="carouselEdificioJuarez" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/edificio-juarez.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/edificio-juarez-1.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación Edificio Juarez -->
+
                     <p class="font-weight-bold">Dirección: Edificio Abraham Gonzales #24 Col. Juárez</p>
                     <p>Trabajos Realizados: Tablaroca, aluminio, instalaciones hidráulicas y sanitarias para módulos de baños, instalación eléctrica, fabricación e instalación de puertas de madera, acabados y pintura.</p>
                 </div>
             </div>
-            <!-- Card remodelación edificio-->
+            <!-- Card remodelación Edificio Juarez-->
+
+            <!-- Modal-carousel Edificio Juarez -->
+            <div class="modal fade" id="modalEdificioJuarez" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalEdificioJuarez">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Edificio Juarez -->
+                            <div id="carouselModalEdificioJuarez" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/edificio-juarez.jpg" alt="remodelación edificio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/edificio-juarez-1.jpg" alt="remodelación edificio">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalEdificioJuarez" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalEdificioJuarez" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Edificio Juarez -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Edificio Juarez -->    
+
             <!-- Card adecuación edificio-->
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
@@ -133,62 +338,266 @@
                 </div>
             </div>
             <!-- Card adecuación edificio-->
-            <!-- Card remodelación edificio 2-->
+
+            <!-- Card remodelación Edificio Londres-->
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Edificio</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/edificio-londres.jpg" class="img-fluid" alt="remodelación de edificio">
+                    
+                    <!-- Imagenes remodelación Edificio Londres estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/edificio-londres.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalEdificioLondres">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/edificio-londres-1.jpg" class="img-fluid" alt="remodelación de edificio">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/edificio-londres-1.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalEdificioLondres">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación Edificio Londres estáticas -->
+
+                    <!-- Carousel remodelación Edificio Londres -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalEdificioLondres">
+                        <div id="carouselEdificioLondres" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/edificio-londres.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/edificio-londres-1.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación Edificio Londres -->
+
                     <p class="font-weight-bold">Dirección: Londres #247 Col. Juárez</p>
                     <p>Trabajos Realizados: Tablaroca, instalación eléctrica, instalación hidráulica, instalación sanitaria, instalación de red contra incendios, aluminio, planta de luz de emergencia, fachada integral, acabados y pintura, y cubo para elevadores.</p>
                 </div>
             </div>
-            <!-- Card remodelación edificio 2-->
-            <!-- Card remodelación edificio 3-->
+            <!-- Card remodelación Edificio Londres-->
+
+            <!-- Modal-carousel Edificio Londres -->
+            <div class="modal fade" id="modalEdificioLondres" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalEdificioLondres">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Edificio Londres -->
+                            <div id="carouselModalEdificioLondres" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/edificio-londres.jpg" alt="remodelación edificio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/edificio-londres-1.jpg" alt="remodelación edificio">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalEdificioLondres" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalEdificioLondres" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Edificio Londres -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Edificio Londres -->
+
+            <!-- Card remodelación Edificio Yucatan-->
             <div class="card text-center mb-4" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Edificio</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/edificio-yucatan.jpg" class="img-fluid" alt="remodelación de edificio">
+                    
+                    <!-- Imagenes remodelación Edificio Yucatan estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/edificio-yucatan.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalEdificioYucatan">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/edificio-yucatan-1.jpg" class="img-fluid" alt="remodelación de edificio">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/edificio-yucatan-1.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalEdificioYucatan">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación Edificio Yucatan estáticas -->
+
+                    <!-- Carousel remodelación Edificio Yucatan -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalEdificioYucatan">
+                        <div id="carouselEdificioYucatan" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/edificio-yucatan.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/edificio-yucatan-1.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación Edificio Yucatan -->
+
                     <p class="font-weight-bold">Dirección: Yucatán #15 Col. Hipódromo Condesa</p>
                     <p>Trabajos Realizados: Tablaroca, fachada integral, pisos, aluminio, escalera de emergencias, carpintería (muebles y puertas), módulos de baño, acabados y pintura.</p>
                 </div>
             </div>
-            <!-- Card remodelación edificio 3-->
-            <!-- Card remodelación edificio 4-->
+            <!-- Card remodelación Edificio Yucatan-->
+
+            <!-- Modal-carousel Edificio Yucatan -->
+            <div class="modal fade" id="modalEdificioYucatan" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalEdificioYucatan">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Edificio Yucatan -->
+                            <div id="carouselModalEdificioYucatan" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/edificio-yucatan.jpg" alt="remodelación edificio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/edificio-yucatan-1.jpg" alt="remodelación edificio">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalEdificioYucatan" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalEdificioYucatan" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Edificio Yucatan -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Edificio Yucatan -->
+
+            <!-- Card remodelación Edificio Obrero-->
             <div class="card text-center" style="background-color: #dae5e9;">
                 <div class="card-body">
                     <h2 class="text-center card-title color-vertice">Remodelación de Edificio</h2>
-                    <div class="row align-items-center p-3">
-                        <div class="col px-2">
-                            <img src="./img/edificio-obrero.jpg" class="img-fluid" alt="remodelación de edificio">
+                    
+                    <!-- Imagenes remodelación Edificio Obrero estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
+                        <div class="col px-2 opacidad">
+                            <img src="./img/edificio-obrero.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalEdificioObrero">
                         </div>
-                        <div class="col pr-2">
-                            <img src="./img/edificio-obrero-1.jpg" class="img-fluid" alt="remodelación de edificio">
+                        <div class="col pr-2 opacidad">
+                            <img src="./img/edificio-obrero-1.jpg" class="img-fluid carousel-trigger" alt="remodelación edificio" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalEdificioObrero">
                         </div>
                     </div>
+                    <!-- Imagenes remodelación Edificio Obrero estáticas -->
+
+                    <!-- Carousel remodelación Edificio Obrero -->
+                    <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalEdificioObrero">
+                        <div id="carouselEdificioObrero" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/edificio-obrero.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/edificio-obrero-1.jpg" class="d-block w-100" alt="remodelación edificio">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel remodelación Edificio Obrero -->
+
                     <p class="font-weight-bold">Dirección: Obrero Mundial #358 Col. Piedad Narvarte</p>
                     <p>Trabajos Realizados: Cambio de techumbre, fachada integral, aluminio, tablaroca e instalación eléctrica.</p>
                     <h1 class="text-center card-title color-vertice">¡Y MUCHO MÁS!</h1>
                 </div>
             </div>
-            <!-- Card remodelación edificio 4-->
+            <!-- Card remodelación Edificio Obrero-->
+
+            <!-- Modal-carousel Edificio Obrero -->
+            <div class="modal fade" id="modalEdificioObrero" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalEdificioObrero">
+                <div class="modal-dialog" role="document">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <!-- Carousel Modal Edificio Obrero -->
+                            <div id="carouselModalEdificioObrero" class="carousel slide carouselModal" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./img/edificio-obrero.jpg" alt="remodelación edificio">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/edificio-obrero-1.jpg" alt="remodelación edificio">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModalEdificioObrero" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModalEdificioObrero" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carousel Modal Edificio Obrero -->
+                        </div>
+                    </div>
+                    <!-- Modal content -->
+                </div>
+            </div>
+            <!-- Modal-carousel Edificio Obrero -->
         </div>
     </div>
 
-    <div class="container-fluid pt-4 pb-lg-4 card-conoce-container background-color-vertice-claro">
+    <div class="container-fluid pb-lg-4 card-conoce-container background-color-vertice-claro">
         <div class="container card-conoce">
             <!-- Card Comencemos -->
             <div class="card background-color-vertice no-border-radius">

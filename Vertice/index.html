@@ -143,26 +143,29 @@
                 </div>
             </div>
             <!-- Card Soluciona -->
+            
             <!-- Card Conoce -->
             <div class="card">
                 <div class="card-body">
                     <h1 class="text-center card-title color-vertice">¡CONOCE NUESTRO TRABAJO!</h1>
-
-                    <div class="row align-items-center p-3 d-none d-md-flex" data-toggle="modal" data-target="#modalConoce">
+                    
+                    <!-- Imagenes conoce estáticas -->
+                    <div class="row align-items-center p-3 d-none d-md-flex" >
                         <div class="col px-2 opacidad">
-                            <img src="./img/terraza.jpg" class="img-fluid" alt="diseño de terraza" style="cursor: pointer;">
+                            <img src="./img/terraza.jpg" class="img-fluid carousel-trigger" alt="diseño de terraza" style="cursor: pointer;" data-slide-to="0" data-toggle="modal" data-target="#modalConoce">
                         </div>
                         <div class="col pr-2 opacidad">
-                            <img src="./img/edificio-insurgentes-1.jpg" class="img-fluid " alt="diseño de terraza" style="cursor: pointer;">
+                            <img src="./img/edificio-insurgentes-1.jpg" class="img-fluid carousel-trigger" alt="remodelación de edificio" style="cursor: pointer;" data-slide-to="1" data-toggle="modal" data-target="#modalConoce">
                         </div>
                         <div class="col pr-2 opacidad">
-                            <img src="./img/baño-sencillo-1.jpg" class="img-fluid" alt="diseño de terraza" style="cursor: pointer;">
+                            <img src="./img/baño-sencillo-1.jpg" class="img-fluid carousel-trigger" alt="remodelación de baño" style="cursor: pointer;" data-slide-to="2" data-toggle="modal" data-target="#modalConoce">
                         </div>
                     </div>
+                    <!-- Imagenes conoce estáticas -->
 
+                    <!-- Carousel Conoce -->
                     <div class="row align-items-center p-3 d-md-none" data-toggle="modal" data-target="#modalConoce">
-                        <!-- Carousel Conoce -->
-                        <div id="carouselConoce" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div id="carouselConoce" class="carousel slide carousel-fade carouselNoModal" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -180,21 +183,20 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Carousel Conoce -->
                     </div>
+                    <!-- Carousel Conoce -->
 
                     <div class="row justify-content-center">
                         <a class="btn btn-primary background-color-vertice px-md-5 py-2" href="./proyectos.html"
                             role="button">NUESTROS PROYECTOS</a>
                     </div>
-
                     
                 </div>
             </div>
             <!-- Card Conoce -->
             
             <!-- Modal-carousel Conoce -->
-            <div class="modal fade" id="modalConoce" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade" id="modalConoce" tabindex="-1" role="dialog" aria-hidden="true" data-target="#modalConoce">
                 <div class="modal-dialog" role="document">
                     <!-- Modal content -->
                     <div class="modal-content">
@@ -206,7 +208,7 @@
 
                         <div class="modal-body">
                             <!-- Carousel Modal conoce -->
-                            <div id="carouselModalConoce" class="carousel slide" data-ride="carousel">
+                            <div id="carouselModalConoce" class="carousel slide carouselModal" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
