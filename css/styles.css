@@ -57,6 +57,10 @@ iframe {
 }
   
 .modal-header {
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
     border:none;
 }
 .close {
